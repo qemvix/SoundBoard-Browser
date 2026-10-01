@@ -1,0 +1,12 @@
+C:\Users\elect\Downloads\SoundboardBrowser\SoundboardBrowser\bin\Release\net8.0-windows\win-x64\publish\SoundboardBrowser.pdb
+C:\Users\elect\Downloads\SoundboardBrowser\SoundboardBrowser\bin\Release\net8.0-windows\win-x64\publish\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\elect\Downloads\SoundboardBrowser\SoundboardBrowser\bin\Release\net8.0-windows\win-x64\publish\D3DCompiler_47_cor3.dll
+C:\Users\elect\Downloads\SoundboardBrowser\SoundboardBrowser\bin\Release\net8.0-windows\win-x64\publish\PenImc_cor3.dll
+C:\Users\elect\Downloads\SoundboardBrowser\SoundboardBrowser\bin\Release\net8.0-windows\win-x64\publish\PresentationNative_cor3.dll
+C:\Users\elect\Downloads\SoundboardBrowser\SoundboardBrowser\bin\Release\net8.0-windows\win-x64\publish\vcruntime140_cor3.dll
+C:\Users\elect\Downloads\SoundboardBrowser\SoundboardBrowser\bin\Release\net8.0-windows\win-x64\publish\wpfgfx_cor3.dll
+C:\Users\elect\Downloads\SoundboardBrowser\SoundboardBrowser\bin\Release\net8.0-windows\win-x64\publish\WebView2Loader.dll
+C:\Users\elect\Downloads\SoundboardBrowser\SoundboardBrowser\bin\Release\net8.0-windows\win-x64\publish\Microsoft.Web.WebView2.Core.xml
+C:\Users\elect\Downloads\SoundboardBrowser\SoundboardBrowser\bin\Release\net8.0-windows\win-x64\publish\Microsoft.Web.WebView2.WinForms.xml
+C:\Users\elect\Downloads\SoundboardBrowser\SoundboardBrowser\bin\Release\net8.0-windows\win-x64\publish\Microsoft.Web.WebView2.Wpf.xml
+C:\Users\elect\Downloads\SoundboardBrowser\SoundboardBrowser\bin\Release\net8.0-windows\win-x64\publish\SoundboardBrowser.exe

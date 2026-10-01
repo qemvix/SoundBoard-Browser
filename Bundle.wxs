@@ -1,0 +1,28 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs"
+     xmlns:bal="http://wixtoolset.org/schemas/v4/wxs/bal">
+
+  <Bundle
+      Name="Soundboard Browser Setup"
+      Manufacturer="Your Name"
+      Version="1.0.0"
+      UpgradeCode="63e1c371-f3de-45b5-8984-fc25f7888791">
+
+    <BootstrapperApplication>
+      <bal:WixStandardBootstrapperApplication Theme="standard" />
+    </BootstrapperApplication>
+
+    <Chain>
+      <ExePackage
+          Id="WebView2Runtime"
+          SourceFile="MicrosoftEdgeWebView2RuntimeInstallerX64.exe"
+          InstallArguments="/silent /install"
+          Permanent="yes"
+          Vital="yes" />
+
+      <MsiPackage
+          Id="SoundboardBrowserMsi"
+          SourceFile="SoundboardBrowser.msi"
+          Vital="yes" />
+    </Chain>
+  </Bundle>
+</Wix>

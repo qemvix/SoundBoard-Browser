@@ -1,0 +1,45 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package
+      Name="Soundboard Browser"
+      Manufacturer="Your Name"
+      Version="1.0.0"
+      UpgradeCode="2dea3df2-aea2-4c5b-88a2-4b37fdc55086"
+      Scope="perMachine">
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version is already installed." />
+    <MediaTemplate EmbedCab="yes" />
+
+    <Feature Id="Main">
+      <ComponentGroupRef Id="AppFiles" />
+      <ComponentRef Id="StartMenuShortcut" />
+    </Feature>
+
+    <StandardDirectory Id="ProgramFiles64Folder">
+      <Directory Id="INSTALLFOLDER" Name="Soundboard Browser" />
+    </StandardDirectory>
+
+    <StandardDirectory Id="ProgramMenuFolder">
+      <Directory Id="AppShortcutFolder" Name="Soundboard Browser" />
+    </StandardDirectory>
+
+    <ComponentGroup Id="AppFiles" Directory="INSTALLFOLDER">
+      <Files Include="publish\**" />
+    </ComponentGroup>
+
+    <Component Id="StartMenuShortcut" Directory="AppShortcutFolder">
+      <Shortcut
+          Id="AppShortcut"
+          Name="Soundboard Browser"
+          Target="[INSTALLFOLDER]SoundboardBrowser.exe"
+          WorkingDirectory="INSTALLFOLDER" />
+      <RemoveFolder Id="RemoveShortcutFolder" On="uninstall" />
+      <RegistryValue
+          Root="HKCU"
+          Key="Software\SoundboardBrowser"
+          Name="Installed"
+          Type="integer"
+          Value="1"
+          KeyPath="yes" />
+    </Component>
+  </Package>
+</Wix>

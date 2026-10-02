@@ -6,6 +6,8 @@
       UpgradeCode="2dea3df2-aea2-4c5b-88a2-4b37fdc55086"
       Scope="perMachine">
 
+    <Icon Id="AppIcon" SourceFile="app.ico" />
+
     <MajorUpgrade DowngradeErrorMessage="A newer version is already installed." />
     <MediaTemplate EmbedCab="yes" />
 
@@ -31,7 +33,8 @@
           Id="AppShortcut"
           Name="Soundboard Browser"
           Target="[INSTALLFOLDER]SoundboardBrowser.exe"
-          WorkingDirectory="INSTALLFOLDER" />
+          WorkingDirectory="INSTALLFOLDER"
+          Icon="AppIcon" />
       <RemoveFolder Id="RemoveShortcutFolder" On="uninstall" />
       <RegistryValue
           Root="HKCU"
